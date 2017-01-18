@@ -12,7 +12,7 @@ This script requires npm and nodejs installed
 ### Flags
 * `--no-import` - disable import feature
 * `--no-dbg` - disable dbg-script injection
-* `--watch` - watches input file for changes and recompiles it
+* `--watch` - watch input file for changes and recompile it
 
 ## What it does
 * It injects debug script in the end (can be disabled by `--no-dbg` argument)
