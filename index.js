@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 const fs = require('fs');
 const args = process.argv.slice(2);
 
@@ -48,7 +49,7 @@ function compile(){
 	}
 
 	if(!args_flags['no-dbg']){
-		output += '\n' + require('./tboi-reisen-dbg-script.js')(mod_variable);
+		output += '\n' + require('./dbg-script.js')(mod_variable);
 	}
 
 	fs.writeFileSync(out_filename, output);
