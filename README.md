@@ -1,6 +1,10 @@
 # tboi-reisen
 ### The Binding Of Isaac: Afterbirth+ mod compiler
 
+## Setup
+This script requires npm and nodejs installed
+`npm i -g tboi-reisen`
+
 ## Usage
 `tboi-reisen main.lua output.lua`
 ### Flags
