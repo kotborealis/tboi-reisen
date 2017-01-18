@@ -49,7 +49,7 @@ function compile(){
 	}
 
 	if(!args_flags['no-dbg']){
-		output += '\n' + require('./dbg-script.js')(mod_variable);
+		output += '\n' + require('./dbg-script.js')(mod_variable, args_flags['production']);
 	}
 
 	fs.writeFileSync(out_filename, output);

@@ -1,4 +1,4 @@
-module.exports = (mod_var) => {
+module.exports = (mod_var, production) => {
 const _ = '_' + Math.random().toString(36).substring(2,6) + '_rs_dbg_';
 return `
 local ${_}log = {}
@@ -8,6 +8,7 @@ local ${_}y = 25
 local ${_}offset = 10
 
 function log(str)
+	${production ? 'return' : ''}
 	table.insert(${_}log, str)
 
 	if #${_}log > ${_}size then
@@ -23,6 +24,6 @@ function ${_}render()
 		y = y + ${_}offset
 	end
 end
-${mod_var}:AddCallback(ModCallbacks.MC_POST_RENDER, ${_}render)
+${production ? `${mod_var}:AddCallback(ModCallbacks.MC_POST_RENDER, ${_}render)` : ''}
 `
 }

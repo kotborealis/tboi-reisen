@@ -12,6 +12,7 @@ This script requires npm and nodejs installed
 ### Flags
 * `--no-import` - disable import feature
 * `--no-dbg` - disable dbg-script injection
+* `--production` - disable dbg-script (for production builds)
 * `--watch` - watch input file for changes and recompile it
 
 ## What it does
