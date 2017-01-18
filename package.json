@@ -1,6 +1,6 @@
 {
   "name": "tboi-reisen",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The Binding Of Isaac: Afterbirth+ mod compiler",
   "main": "index.js",
   "repository": "https://github.com/kotborealis/tboi-reisen.git",
