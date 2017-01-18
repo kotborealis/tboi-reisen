@@ -24,6 +24,6 @@ function ${_}render()
 		y = y + ${_}offset
 	end
 end
-${production ? `${mod_var}:AddCallback(ModCallbacks.MC_POST_RENDER, ${_}render)` : ''}
+${!production ? `${mod_var}:AddCallback(ModCallbacks.MC_POST_RENDER, ${_}render)` : ''}
 `
 }
