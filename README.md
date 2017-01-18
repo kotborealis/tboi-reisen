@@ -8,6 +8,7 @@ This script requires npm and nodejs installed
 
 ## Usage
 `tboi-reisen main.lua output.lua`
+
 ### Flags
 * `--no-import` - disable import feature
 * `--no-dbg` - disable dbg-script injection
