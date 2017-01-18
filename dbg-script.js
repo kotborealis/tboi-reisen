@@ -8,7 +8,6 @@ local ${_}y = 25
 local ${_}offset = 10
 
 function log(str)
-	${production ? 'return' : ''}
 	table.insert(${_}log, str)
 
 	if #${_}log > ${_}size then
