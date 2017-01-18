@@ -3,6 +3,7 @@
 
 ## Setup
 This script requires npm and nodejs installed
+
 `npm i -g tboi-reisen`
 
 ## Usage
